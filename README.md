@@ -2,8 +2,7 @@
 
 Create a clock using HTML, CSS, and of course React.
 
-I was initially inspired by [this post](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76) on Medium, by [Samer Buna](https://twitter.com/samerbuna).
-
+I was initially inspired by [this post](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76) on Medium, by [Samer Buna](https://twitter.com/samerbuna) and the [Render page](https://facebook.github.io/react/docs/rendering-elements.html) in the React Documentation.
 ## Set up
 To get started, install the dependencies using either [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/).
 
