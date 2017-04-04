@@ -1,6 +1,8 @@
 # Hello World: React
 
-My little sandbox to help me understand React. I was initially inspired by [this post](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76) on Medium, by [Samer Buna](https://twitter.com/samerbuna).
+Create a clock using HTML, CSS, and of course React.
+
+I was initially inspired by [this post](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76) on Medium, by [Samer Buna](https://twitter.com/samerbuna).
 
 ## Set up
 To get started, install the dependencies using either [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/).
