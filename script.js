@@ -11,7 +11,7 @@ function clock() {
 	const reactElement = (
 		<div className="clock-container">
 			<h1>Hello, world!</h1>
-			<h2>The current time is <span className="clock-time">{ new Date().toLocaleTimeString()} </span></h2>
+			<h2>The current time is <span className="clock-time">{ new Date().toLocaleTimeString() }</span></h2>
 		</div>
 	);
 
