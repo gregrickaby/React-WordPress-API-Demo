@@ -5,7 +5,7 @@ My little sandbox to help me understand React. I was initially inspired by [this
 ## Set up
 To get started, install the dependencies using either [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/).
 
-###Yarn
+### Yarn
 
 ```bash
 yarn install
