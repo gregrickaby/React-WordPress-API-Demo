@@ -1,12 +1,7 @@
 import React from "react";
 
 export const Footer = () => (
-  <footer>
-    <ul>
-      <li className="menu-item">Home</li>
-      <li className="menu-item">About</li>
-      <li className="menu-item">Resources</li>
-      <li className="menu-item">Contact</li>
-    </ul>
+  <footer className="site-footer">
+    <p className="site-info">&copy; 2018 Greg Rickaby ☕</p>
   </footer>
 );
