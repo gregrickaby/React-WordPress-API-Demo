@@ -75,18 +75,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Header title="Hello World" />
-        {// Loop through our posts and return <Article> components.
-        this.state.posts.map(post => (
-          <Article
-            title={post.title.rendered}
-            excerpt={post.excerpt.rendered}
-            key={post.id}
-          />
-        ))}
+      <React.Fragment>
+        <Header title="My latest blog posts" />
+        <main className="site-main">
+          {// Loop through our posts and return <Article> components.
+          this.state.posts.map(post => (
+            <Article
+              key={post.id}
+              title={post.title.rendered}
+              content={post.excerpt.rendered}
+            />
+          ))}
+        </main>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
