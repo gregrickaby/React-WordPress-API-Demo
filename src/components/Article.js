@@ -1,11 +1,18 @@
 import React, { Component } from "react";
+import { createDangerousMarkup } from "../helpers";
 
 class Article extends Component {
   render() {
     return (
-      <article>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.content}</p>
+      <article className="card">
+        <h1
+          className="post-title"
+          dangerouslySetInnerHTML={createDangerousMarkup(this.props.title)}
+        />
+        <div
+          className="post-excerpt"
+          dangerouslySetInnerHTML={createDangerousMarkup(this.props.excerpt)}
+        />
       </article>
     );
   }
