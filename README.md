@@ -1,6 +1,6 @@
 # React WordPress API Demo
 
-Grab my latests blog posts with the [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) API, and display them with React.
+Grab my latests blog posts with the [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) API, and display them with [React](https://reactjs.org/).
 
 ## Commands
 
