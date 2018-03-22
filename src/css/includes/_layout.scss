@@ -1,4 +1,46 @@
-.app-logo {
-  height: 64px;
-  width: 64px;
+//--------------------------
+// Body
+//--------------------------
+body {
+  background-color: #e9e9e9;
+  color: #444;
+}
+
+//--------------------------
+// App
+//--------------------------
+#root {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.not-ready #root {
+  opacity: 0;
+}
+
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.site-header {
+  margin-bottom: 48px;
+
+  .app-logo {
+    width: 96px;
+  }
+}
+
+.site-main {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 48px;
+}
+
+.site-footer {
+  font-size: 14px;
+  margin-top: 48px;
+  text-align: center;
 }
