@@ -11,7 +11,7 @@ class Article extends Component {
         />
         <div
           className="post-excerpt"
-          dangerouslySetInnerHTML={createDangerousMarkup(this.props.excerpt)}
+          dangerouslySetInnerHTML={createDangerousMarkup(this.props.content)}
         />
       </article>
     );
