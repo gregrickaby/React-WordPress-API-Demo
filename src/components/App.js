@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Header } from "./Header";
+import { Menu } from "./Menu";
 import Article from "./Article";
 import { Footer } from "./Footer";
 import "../css/styles.css";
@@ -77,6 +77,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header title="My latest blog posts" />
+        <Menu />
         <main className="site-main">
           {// Loop through our posts and return <Article> components.
           this.state.posts.map(post => (
