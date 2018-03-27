@@ -1,21 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import { About } from "../pages/About";
 
 export const Menu = () => (
-  <Router>
+  <BrowserRouter>
     <div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
 
       <Route exact path="/" />
       <Route path="/about" component={About} />
     </div>
-  </Router>
+  </BrowserRouter>
 );
