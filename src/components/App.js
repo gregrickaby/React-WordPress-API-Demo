@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Header } from "./Header";
 import { Menu } from "./Menu";
-import Article from "./Article";
+import Card from "./Card";
 import { Footer } from "./Footer";
 import "../css/styles.css";
 
@@ -79,12 +79,13 @@ class App extends Component {
         <Header title="My latest blog posts" />
         <Menu />
         <main className="site-main">
-          {// Loop through our posts and return <Article> components.
+          {// Loop through our posts and return <Card> components.
           this.state.posts.map(post => (
-            <Article
+            <Card
               key={post.id}
               title={post.title.rendered}
               content={post.excerpt.rendered}
+              permalink={post.link}
             />
           ))}
         </main>
