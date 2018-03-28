@@ -2,6 +2,10 @@
 
 Grab my latests blog posts from the [WordPress REST API](https://developer.wordpress.org/rest-api/) with the [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) API, and display them with [React](https://reactjs.org/).
 
+## Demo
+
+http://react-wordpress-api-demo.gregrickaby.com/
+
 ## Commands
 
 `npm i` - Install it.
