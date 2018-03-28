@@ -8,5 +8,8 @@ export const Footer = () => (
         ☕
       </span>
     </p>
+    <p>
+      <a href="#root">Top</a>
+    </p>
   </footer>
 );
