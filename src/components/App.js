@@ -6,13 +6,6 @@ import Card from "./Card";
 import "../css/styles.css";
 
 class App extends Component {
-  /**
-   * Setting context and default state.
-   *
-   * TO DO:
-   * - Create a "modal" component which will display the full blog post after clicking on the article title.
-   * - Control the modal via state (modalOpen = true/false)
-   */
   constructor() {
     super();
     this.state = {
