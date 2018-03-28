@@ -1,6 +1,6 @@
 # React WordPress REST API Demo
 
-Grab my latests blog posts from the [WordPress REST API](https://developer.wordpress.org/rest-api/) with the [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) API, and display them with [React](https://reactjs.org/).
+Create a single page [ReactJS](https://reactjs.org/) web app, using both the [WordPress REST API](https://developer.wordpress.org/rest-api/) and [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 ## Demo
 
@@ -16,4 +16,4 @@ https://react-wordpress-api-demo.gregrickaby.com/
 
 ---
 
-Powered by the [create-react-app](https://github.com/facebook/create-react-app) and delicious ☕️
+Powered by the [create-react-app](https://github.com/facebook/create-react-app), [WebDevStudios](https://webdevstudios.com) and delicious ☕️
