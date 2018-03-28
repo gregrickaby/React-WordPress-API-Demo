@@ -5,10 +5,10 @@ export const Menu = () => (
   <nav className="site-navigation">
     <ul className="menu">
       <li className="menu-item menu-item-home">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/React-WordPress-API-Demo/">Home</NavLink>
       </li>
       <li className="menu-item menu-item-about">
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/React-WordPress-API-Demo/about">About</NavLink>
       </li>
     </ul>
   </nav>

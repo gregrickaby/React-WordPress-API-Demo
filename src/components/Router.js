@@ -8,7 +8,7 @@ import NotFound from "../pages/NotFound";
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={App} />
+      <Route exact path="/React-WordPress-API-Demo/" component={App} />
       <Route exact path="/about" component={About} />
       <Route path="/single/:id/:slug/" component={Single} />
       <Route component={NotFound} />
