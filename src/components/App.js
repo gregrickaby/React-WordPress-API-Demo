@@ -78,7 +78,7 @@ class App extends Component {
       <React.Fragment>
         <Header title="My latest blog posts" />
         <Menu />
-        <main className="site-main">
+        <section className="home-container">
           {// Loop through our posts and return <Card> components.
           this.state.posts.map(post => (
             <Card
@@ -90,7 +90,7 @@ class App extends Component {
               slug={post.slug}
             />
           ))}
-        </main>
+        </section>
         <Footer />
       </React.Fragment>
     );
