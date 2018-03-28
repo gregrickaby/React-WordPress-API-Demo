@@ -9,7 +9,9 @@ export const Footer = () => (
       </span>
     </p>
     <p>
-      <a href="#root">Top</a>
+      <a href="https://github.com/gregrickaby/React-WordPress-API-Demo">
+        View this on Github
+      </a>
     </p>
   </footer>
 );
