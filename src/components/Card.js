@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { createDangerousMarkup } from "../helpers";
 
 class Card extends Component {
@@ -12,8 +12,21 @@ class Card extends Component {
         />
         <div
           className="post-excerpt"
-          dangerouslySetInnerHTML={createDangerousMarkup(this.props.content)}
+          dangerouslySetInnerHTML={createDangerousMarkup(this.props.excerpt)}
         />
+        <Link
+          className="read-more"
+          to={{
+            pathname: `/single/${this.props.id}/${this.props.slug}/`,
+            state: {
+              id: this.props.id,
+              title: this.props.title,
+              content: this.props.content
+            }
+          }}
+        >
+          Read More
+        </Link>
       </article>
     );
   }
