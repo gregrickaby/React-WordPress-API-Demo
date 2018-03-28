@@ -8,7 +8,7 @@ class NotFound extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header title="My latest blog posts" />
+        <Header />
         <Menu />
         <section className="single-container not-found">
           <h1>

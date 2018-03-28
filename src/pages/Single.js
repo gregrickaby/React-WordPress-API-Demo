@@ -9,7 +9,7 @@ class Single extends Component {
     const postData = this.props.location.state;
     return (
       <React.Fragment>
-        <Header title="My latest blog posts" />
+        <Header />
         <Menu />
         <section className="single-container">
           <article className="post">

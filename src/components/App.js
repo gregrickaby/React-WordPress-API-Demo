@@ -76,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header title="My latest blog posts" />
+        <Header />
         <Menu />
         <section className="home-container">
           {// Loop through our posts and return <Card> components.
