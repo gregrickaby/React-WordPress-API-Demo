@@ -19,7 +19,7 @@ class NotFound extends Component {
           </h1>
           <p>Sorry about that. It looks like there's nothing here.</p>
           <p>
-            <Link to="/React-WordPress-API-Demo/">Return to the homepage</Link>
+            <Link to="/">Return to the homepage</Link>
           </p>
         </section>
         <Footer />
