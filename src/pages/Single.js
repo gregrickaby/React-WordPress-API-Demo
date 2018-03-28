@@ -18,7 +18,7 @@ class Single extends Component {
               dangerouslySetInnerHTML={createDangerousMarkup(postData.title)}
             />
             <div
-              className="post-excerpt"
+              className="post-content"
               dangerouslySetInnerHTML={createDangerousMarkup(postData.content)}
             />
           </article>

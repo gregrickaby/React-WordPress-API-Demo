@@ -1,8 +1,9 @@
-//--------------------------
+//-----------------------------------------------
 // Content
-//--------------------------
+//-----------------------------------------------
+
 .card {
-  background-color: #fff;
+  background-color: #f1f1f1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 24px;
   transition: transform 0.2s ease-in;
@@ -11,5 +12,27 @@
   &:focus {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
     transform: scale(1.025);
+  }
+}
+
+.post {
+  &-title {
+    font-family: serif;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 30px;
+  }
+
+  &-content {
+    p:first-of-type {
+      font-size: 28px;
+      line-height: 36px;
+      margin: 30px 0;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 18px;
+    }
   }
 }

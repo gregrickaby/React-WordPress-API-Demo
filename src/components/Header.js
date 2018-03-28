@@ -1,9 +1,12 @@
 import React from "react";
 import logo from "../img/logo.svg";
+import { Link } from "react-router-dom";
 
 export const Header = ({ title }) => (
   <header className="site-header">
-    <img src={logo} className="app-logo" alt="logo" />
+    <Link to="/">
+      <img src={logo} className="app-logo" alt="logo" />
+    </Link>
     <h1 className="site-name">{`${title}`}</h1>
   </header>
 );
