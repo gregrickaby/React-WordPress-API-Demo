@@ -14,10 +14,7 @@ class About extends Component {
             <h1 class="post-title">About</h1>
             <div class="post-content">
               <p>This is a static page. Not much to see here.</p>
-              <img
-                src="https://picsum.photos/750/300?random"
-                alt="A random photo"
-              />
+              <img src="https://picsum.photos/750/300?random" alt="Random" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Profectus in exilium Tubulus statim nec respondere ausus; Qui
@@ -38,7 +35,7 @@ class About extends Component {
               </p>
               <img
                 src="https://picsum.photos/200/300/?random"
-                alt="Another random image"
+                alt="Random"
                 className="left"
               />
               <p>
@@ -63,6 +60,17 @@ class About extends Component {
                 illis instituta sunt aut inventa sunt? Ut proverbia non nulla
                 veriora sint quam vestra dogmata.{" "}
               </p>
+              <div className="fluid-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/bvim4rsNHkQ?rel=0"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="YouTube"
+                />
+              </div>
             </div>
           </article>
         </section>
