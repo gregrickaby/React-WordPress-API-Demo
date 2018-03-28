@@ -7,11 +7,11 @@ class Card extends Component {
     return (
       <article className="card">
         <h1
-          className="post-title"
+          className="card-title"
           dangerouslySetInnerHTML={createDangerousMarkup(this.props.title)}
         />
         <div
-          className="post-excerpt"
+          className="card-excerpt"
           dangerouslySetInnerHTML={createDangerousMarkup(this.props.excerpt)}
         />
         <Link
