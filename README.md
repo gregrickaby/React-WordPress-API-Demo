@@ -4,7 +4,7 @@ Grab my latests blog posts from the [WordPress REST API](https://developer.wordp
 
 ## Demo
 
-http://react-wordpress-api-demo.gregrickaby.com/
+https://react-wordpress-api-demo.gregrickaby.com/
 
 ## Commands
 
