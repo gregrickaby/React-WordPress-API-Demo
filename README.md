@@ -4,7 +4,7 @@ Create a single page [ReactJS](https://reactjs.org/) web app, using both the [Wo
 
 ## Demo
 
-https://react-wordpress-api-demo.gregrickaby.com/
+https://react-wordpress-api-demo.netlify.com/
 
 ## Commands
 
