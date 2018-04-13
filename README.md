@@ -1,6 +1,6 @@
 # React WordPress REST API Demo
 
-Create a single page [ReactJS](https://reactjs.org/) web app, using both the [WordPress REST API](https://developer.wordpress.org/rest-api/) and [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+Create a single page web app with [ReactJS](https://reactjs.org/) using [WordPress](https://developer.wordpress.org/rest-api/) as a headless CMS.
 
 ## Demo
 
