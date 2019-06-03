@@ -8,11 +8,11 @@ https://react-wordpress-api-demo.netlify.com/
 
 ## Commands
 
-`npm i` - Install it.
+`yarn` - Install it.
 
-`npm start` - Develop it (including compiling Sass).
+`yarn start` - Develop it (including compiling Sass).
 
-`npm build` - Get it ready for prod.
+`yarn build` - Get it ready for prod.
 
 ---
 
