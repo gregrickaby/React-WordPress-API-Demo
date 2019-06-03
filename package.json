@@ -20,15 +20,20 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
     "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
     "styled-components": "^4.2.1"
+  },
+  ,
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   },
   "scripts": {
     "start": "netlify dev",
-    "build": "react-scripts build && netlify deploy --prod --dir=./build --open",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
