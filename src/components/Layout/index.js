@@ -7,7 +7,7 @@ import { SiteLayout } from "./styles";
 
 const Layout = ({ children }) => (
   <>
-    <SiteLayout className="site">
+    <SiteLayout className="site-inner">
       <Header />
       <Menu />
       <main className="site-content">{children}</main>

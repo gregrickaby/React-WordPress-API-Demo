@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { PostLayout } from "./styles";
 import { createDangerousMarkup } from "../../helpers";
+import { PostLayout } from "./styles";
 
 class Post extends Component {
   render() {

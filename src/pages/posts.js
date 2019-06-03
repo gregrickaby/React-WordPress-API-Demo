@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Layout from "../components/Layout";
 import Post from "../components/Post";
 
-class Single extends Component {
+class Posts extends Component {
   render() {
     const postData = this.props.location.state;
     return (
@@ -15,4 +15,4 @@ class Single extends Component {
   }
 }
 
-export default Single;
+export default Posts;
