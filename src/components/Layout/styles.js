@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
   .fluid-embed {
     height: 0;
     overflow: hidden;
-    padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+    padding-bottom: 56.25%;
     position: relative;
 
     embed,
