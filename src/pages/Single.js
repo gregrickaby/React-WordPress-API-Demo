@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { createDangerousMarkup } from "../helpers";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
+import Post from "../components/Post";
 import { Footer } from "../components/Footer";
 
 class Single extends Component {
@@ -11,18 +11,7 @@ class Single extends Component {
       <>
         <Header />
         <Menu />
-        <section className="single-container">
-          <article className="post">
-            <h1
-              className="post-title"
-              dangerouslySetInnerHTML={createDangerousMarkup(postData.title)}
-            />
-            <div
-              className="post-content"
-              dangerouslySetInnerHTML={createDangerousMarkup(postData.content)}
-            />
-          </article>
-        </section>
+        <Post title={postData.title} content={postData.content} />
         <Footer />
       </>
     );
