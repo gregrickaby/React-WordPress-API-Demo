@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { createDangerousMarkup } from "../helpers";
+import { createDangerousMarkup } from "../../helpers";
 
 class Card extends Component {
   render() {
