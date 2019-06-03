@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import config from "../config";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import styled from "styled-components";
@@ -20,7 +21,7 @@ class IndexPage extends Component {
     };
 
     // Set the API Url.
-    this.apiUrl = "https://gregrickaby.com/wp-json/wp/v2/posts";
+    this.apiUrl = config.options.wordPressUrl;
 
     // Set request args.
     this.apiArgs = {
