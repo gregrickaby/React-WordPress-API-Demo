@@ -3,6 +3,16 @@ import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import Card from "../components/Card";
+import styled from "styled-components";
+
+const HomeLayout = styled.section`
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 48px;
+  max-width: 1140px;
+`;
 
 class IndexPage extends Component {
   constructor() {
@@ -70,7 +80,7 @@ class IndexPage extends Component {
       <>
         <Header />
         <Menu />
-        <section className="home-container">
+        <HomeLayout className="home-container">
           {// Loop through our posts and return <Card> components.
           this.state.posts.map(post => (
             <Card
@@ -82,7 +92,7 @@ class IndexPage extends Component {
               slug={post.slug}
             />
           ))}
-        </section>
+        </HomeLayout>
         <Footer />
       </>
     );
