@@ -1,4 +1,4 @@
-module.exports = {
+export const config = {
   siteMetadata: {
     title: `React WordPress REST API Demo`,
     description: `Create a single page web app with ReactJS using WordPress as a headless CMS.`,

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import config from "../config";
+import { config } from "../config";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import styled from "styled-components";

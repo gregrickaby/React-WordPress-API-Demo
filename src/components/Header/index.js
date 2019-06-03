@@ -1,5 +1,5 @@
 import React from "react";
-import config from "../../config";
+import { config } from "../../config";
 import logo from "../../img/logo.svg";
 import { Link } from "react-router-dom";
 import { HeaderLayout } from "./styles";
