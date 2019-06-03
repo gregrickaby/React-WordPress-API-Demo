@@ -8,7 +8,7 @@ class Single extends Component {
   render() {
     const postData = this.props.location.state;
     return (
-      <React.Fragment>
+      <>
         <Header />
         <Menu />
         <section className="single-container">
@@ -24,7 +24,7 @@ class Single extends Component {
           </article>
         </section>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }

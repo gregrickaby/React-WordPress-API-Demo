@@ -68,7 +68,7 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <Header />
         <Menu />
         <section className="home-container">
@@ -85,7 +85,7 @@ class App extends Component {
           ))}
         </section>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }

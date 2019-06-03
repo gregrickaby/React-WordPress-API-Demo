@@ -6,7 +6,7 @@ import { Footer } from "../components/Footer";
 class About extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <Header />
         <Menu />
         <section className="single-container">
@@ -75,7 +75,7 @@ class About extends Component {
           </article>
         </section>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }

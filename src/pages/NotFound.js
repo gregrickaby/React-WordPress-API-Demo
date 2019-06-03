@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer";
 class NotFound extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <Header />
         <Menu />
         <section className="single-container not-found">
@@ -23,7 +23,7 @@ class NotFound extends Component {
           </p>
         </section>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }
