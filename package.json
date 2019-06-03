@@ -32,7 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap && netlify deploy --prod --dir=./build --open"
+    "postbuild": "react-snap",
+    "deploy": "netlify deploy --prod --dir=./build --open"
   },
   "eslintConfig": {
     "extends": "react-app"
