@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { CardLayout } from "./styles";
 import { createDangerousMarkup } from "../../helpers";
 
 class Card extends Component {
   render() {
     return (
-      <article className="card">
+      <CardLayout className="card">
         <h1
           className="card-title"
           dangerouslySetInnerHTML={createDangerousMarkup(this.props.title)}
@@ -27,7 +28,7 @@ class Card extends Component {
         >
           Read More
         </Link>
-      </article>
+      </CardLayout>
     );
   }
 }

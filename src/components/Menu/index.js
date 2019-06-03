@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { MenuLayout } from "./styles";
 
 export const Menu = () => (
-  <nav className="site-navigation">
+  <MenuLayout className="site-navigation">
     <ul className="menu">
       <li className="menu-item menu-item-home">
         <NavLink to="/">Home</NavLink>
@@ -11,5 +12,5 @@ export const Menu = () => (
         <NavLink to="/about">About</NavLink>
       </li>
     </ul>
-  </nav>
+  </MenuLayout>
 );

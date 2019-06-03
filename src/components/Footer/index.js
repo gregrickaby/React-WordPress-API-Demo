@@ -1,7 +1,8 @@
 import React from "react";
+import { FooterLayout } from "./styles";
 
 export const Footer = () => (
-  <footer className="site-footer">
+  <FooterLayout className="site-footer">
     <p className="site-info">
       &copy; {new Date().getFullYear()} Greg Rickaby{" "}
       <span role="img" aria-label="coffee">
@@ -13,5 +14,5 @@ export const Footer = () => (
         View this on Github
       </a>
     </p>
-  </footer>
+  </FooterLayout>
 );
