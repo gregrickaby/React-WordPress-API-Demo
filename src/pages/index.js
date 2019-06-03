@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Header } from "../components/Header";
-import { Menu } from "../components/Menu";
-import { Footer } from "../components/Footer";
+import Layout from "../components/Layout";
 import Card from "../components/Card";
 import styled from "styled-components";
 
@@ -78,22 +76,21 @@ class IndexPage extends Component {
   render() {
     return (
       <>
-        <Header />
-        <Menu />
-        <HomeLayout className="home-container">
-          {// Loop through our posts and return <Card> components.
-          this.state.posts.map(post => (
-            <Card
-              key={post.id}
-              id={post.id}
-              title={post.title.rendered}
-              excerpt={post.excerpt.rendered}
-              content={post.content.rendered}
-              slug={post.slug}
-            />
-          ))}
-        </HomeLayout>
-        <Footer />
+        <Layout>
+          <HomeLayout className="home-container">
+            {// Loop through our posts and return <Card> components.
+            this.state.posts.map(post => (
+              <Card
+                key={post.id}
+                id={post.id}
+                title={post.title.rendered}
+                excerpt={post.excerpt.rendered}
+                content={post.content.rendered}
+                slug={post.slug}
+              />
+            ))}
+          </HomeLayout>
+        </Layout>
       </>
     );
   }
