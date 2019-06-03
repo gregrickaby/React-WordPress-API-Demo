@@ -3,7 +3,6 @@ import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import Card from "../components/Card";
-// import "../css/styles.css";
 
 class IndexPage extends Component {
   constructor() {

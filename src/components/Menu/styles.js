@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const MenuLayout = styled.nav`
-  background-color: #f1f1f1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 24px;
-  transition: transform 0.2s ease-in;
+  text-align: center;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
-    transform: scale(1.025);
+  .menu {
+    margin: 0 0 16px;
+    padding: 0;
+
+    &-item {
+      display: inline-block;
+      margin-left: 16px;
+
+      &-home {
+        margin-left: 0;
+      }
+    }
   }
 `;
