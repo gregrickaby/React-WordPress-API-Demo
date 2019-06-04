@@ -1,6 +1,6 @@
 # React WordPress REST API Demo
 
-Create a single page web app with [ReactJS](https://reactjs.org/) using [WordPress](https://developer.wordpress.org/rest-api/) as a headless CMS.
+Create an SPA with [React](https://reactjs.org/) using [WordPress REST API](https://developer.wordpress.org/rest-api/) 
 
 ## Demo
 
