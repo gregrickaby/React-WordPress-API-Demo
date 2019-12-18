@@ -18,7 +18,7 @@
     "url": "https://github.com/gregrickaby/React-WordPress-API-Demo/issues"
   },
   "dependencies": {
-    "react": "^16.8.6",
+    "react": "^16.12.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
