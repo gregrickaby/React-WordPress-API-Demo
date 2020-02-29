@@ -14,7 +14,7 @@ class NotFound extends Component {
                 😳
               </span>
             </h1>
-            <p>Sorry about that. It looks like there's nothing here.</p>
+            <p>Sorry about that. It looks like nothing is here.</p>
             <p>
               <Link to="/">Return to the homepage</Link>
             </p>
