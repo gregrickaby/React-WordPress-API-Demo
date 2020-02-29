@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/Layout";
-import Post from "../components/Post";
+import Content from "../components/Content";
 
 class Posts extends Component {
   render() {
@@ -8,7 +8,7 @@ class Posts extends Component {
     return (
       <>
         <Layout>
-          <Post title={postData.title} content={postData.content} />
+          <Content title={postData.title} content={postData.content} />
         </Layout>
       </>
     );

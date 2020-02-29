@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { createDangerousMarkup } from "../../helpers";
 import { PostLayout } from "./styles";
 
-class Post extends Component {
+class Content extends Component {
   render() {
     return (
       <PostLayout className="post">
@@ -19,4 +19,4 @@ class Post extends Component {
   }
 }
 
-export default Post;
+export default Content;
