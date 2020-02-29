@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .post {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 700px;
     padding: 48px;
   }
 
