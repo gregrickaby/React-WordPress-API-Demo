@@ -4,6 +4,8 @@ Create an SPA with [React](https://reactjs.org/) using [WordPress REST API](http
 
 ## Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be9fb77e-a2a6-4ef0-b3ac-fd0ae72914af/deploy-status)](https://app.netlify.com/sites/react-wordpress-api-demo/deploys)
+
 https://react-wordpress-api-demo.netlify.com/
 
 ## Prerequisites
