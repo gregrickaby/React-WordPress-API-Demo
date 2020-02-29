@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./templates/homepage";
 import Pages from "./templates/pages";
 import Posts from "./templates/posts";
-import NotFound from "./templates/not-found";
+import NotFound from "./templates/404";
 
 const Router = () => (
   <BrowserRouter>
