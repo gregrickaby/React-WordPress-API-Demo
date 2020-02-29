@@ -18,7 +18,7 @@ class Card extends Component {
         <Link
           className="read-more"
           to={{
-            pathname: `/single/${this.props.id}/${this.props.slug}/`,
+            pathname: `/blog/${this.props.id}/${this.props.slug}/`,
             state: {
               id: this.props.id,
               title: this.props.title,
