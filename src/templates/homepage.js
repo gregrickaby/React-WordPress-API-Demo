@@ -13,7 +13,7 @@ const HomeLayout = styled.section`
   max-width: 1140px;
 `;
 
-class IndexPage extends Component {
+class Homepage extends Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,10 @@ class IndexPage extends Component {
     };
 
     // Set the request.
-    this.apiRequest = new Request(this.apiUrl, this.apiArgs);
+    this.apiRequest = new Request(
+      `${this.apiUrl}/wp-json/wp/v2/posts`,
+      this.apiArgs
+    );
   }
 
   /**
@@ -97,4 +100,4 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage;
+export default Homepage;
