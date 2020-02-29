@@ -16,65 +16,33 @@ const HomeLayout = styled.section`
 class Homepage extends Component {
   constructor() {
     super();
-    this.state = {
-      posts: []
-    };
-
-    // Set the API Url.
-    this.apiUrl = config.options.wordPressUrl;
-
-    // Set request args.
-    this.apiArgs = {
-      method: "GET",
-      mode: "cors",
-      cache: "default",
-      header: new Headers({
-        "Content-Type": "application/json"
-      })
-    };
-
-    // Set the request.
-    this.apiRequest = new Request(
-      `${this.apiUrl}/wp-json/wp/v2/posts`,
-      this.apiArgs
-    );
+    this.state = { data: [] };
   }
 
-  /**
-   * Kick off a promise to fetch data from remote API.
-   */
-  fetchData() {
-    // Return the promise.
-    return (
-      fetch(this.apiRequest)
-        // If we have data...convert and return as JSON.
-        .then(response => response.json())
+  async componentDidMount() {
+    try {
+      // Fetch WordPress posts.
+      const response = await fetch(
+        `${config.options.wordPressUrl}/wp-json/wp/v2/posts`
+      );
 
-        // Returning the results of the response.
-        .then(data => data)
+      // If there's an error with the response, bail.
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
 
-        // Catch any errors and bail!
-        .catch(error => {
-          console.error(error);
-        })
-    );
-  }
+      // Grab the response and set JSON data.
+      const json = await response.json();
 
-  /**
-   * Since we're loading data from a remote endpoint,
-   * this is a good place to instantiate the network request.
-   */
-  componentDidMount() {
-    // Get the WP data.
-    const posts = this.fetchData();
+      // Place the JSON into state.
+      this.setState({ data: json });
 
-    // When the promise is resolved, set the data as state.
-    posts.then(post => {
-      this.setState({ posts: post });
-
-      // Toggle the body class.
+      // Remove the "not ready" body class.
       document.body.classList.remove("not-ready");
-    });
+    } catch (error) {
+      console.error(error);
+      document.body.classList.add("error");
+    }
   }
 
   render() {
@@ -83,7 +51,7 @@ class Homepage extends Component {
         <Layout>
           <HomeLayout className="home-container">
             {// Loop through our posts and return <Card> components.
-            this.state.posts.map(post => (
+            this.state.data.map(post => (
               <Card
                 key={post.id}
                 id={post.id}
