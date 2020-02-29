@@ -9,15 +9,9 @@ export const PostLayout = styled.article`
   }
 
   .post-content {
-    p:first-of-type {
-      font-size: 28px;
-      line-height: 36px;
-      margin: 30px 0;
-    }
-
     p {
-      margin: 25px 0;
       font-size: 18px;
+      margin: 25px 0;
     }
   }
 `;
