@@ -6,6 +6,6 @@ export const config = {
     siteUrl: `https://react-wordpress-api-demo.netlify.com/`
   },
   options: {
-    wordPressUrl: "https://gregrickaby.com/wp-json/wp/v2/posts"
+    wordPressUrl: "https://webdevstudios.com/wp-json/wp/v2/posts"
   }
 };
