@@ -22,9 +22,7 @@ class Homepage extends Component {
   async componentDidMount() {
     try {
       // Fetch WordPress posts.
-      const response = await fetch(
-        `${config.options.wordPressUrl}/wp-json/wp/v2/posts`
-      );
+      const response = await fetch(`${config.options.wordPressUrl}`);
 
       // If there's an error with the response, bail.
       if (!response.ok) {
@@ -50,17 +48,19 @@ class Homepage extends Component {
       <>
         <Layout>
           <HomeLayout className="home-container">
-            {// Loop through our posts and return <Card> components.
-            this.state.data.map(post => (
-              <Card
-                key={post.id}
-                id={post.id}
-                title={post.title.rendered}
-                excerpt={post.excerpt.rendered}
-                content={post.content.rendered}
-                slug={post.slug}
-              />
-            ))}
+            {
+              // Loop through our posts and return <Card> components.
+              this.state.data.map((post) => (
+                <Card
+                  key={post.id}
+                  id={post.id}
+                  title={post.title.rendered}
+                  excerpt={post.excerpt.rendered}
+                  content={post.content.rendered}
+                  slug={post.slug}
+                />
+              ))
+            }
           </HomeLayout>
         </Layout>
       </>
