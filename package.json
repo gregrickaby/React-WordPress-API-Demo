@@ -2,7 +2,7 @@
   "name": "react-wordpress-api-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://react-wordpress-api-demo.netlify.com/",
+  "homepage": "https://react-wordpress-api-demo.netlify.app/",
   "license": "MIT",
   "keywords": [
     "react",
